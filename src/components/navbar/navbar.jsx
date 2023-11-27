@@ -53,7 +53,7 @@ const Navbarstyle = styled.div`
         cursor: pointer;
     }
 
-    @media (max-width: 480px) {
+    @media Screen and (max-width: 480px) {
         width: calc(100vw - 40px);
         align-items: center;
         justify-content:space-between; 
