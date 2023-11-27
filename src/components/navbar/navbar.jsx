@@ -3,9 +3,6 @@ import styled from "styled-components"
 import NavGreaterThen from "./NavScreenGreater";
 import NavLessThen from "./NavLessThen";
 
-//onClick={()=> alert("navigate('/')")}
-//onClick={()=> alert("navigate('/clients')")}
-
 export default function Navbar() {
     const [matches, setMatches] = useState(
         window.matchMedia("(min-width: 481px)").matches
