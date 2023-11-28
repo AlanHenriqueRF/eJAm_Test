@@ -9,6 +9,7 @@ import satisfactionImage from '../assets/image 4.png'
 import perfiImage from '../assets/Rectangle 1127.png'
 import litleImage from '../assets/image-removebg-preview (12) 1.png'
 import discountsymbol from '../assets/DiscountSymbol.svg'
+import satisfationstamp from '../assets/satifationimage.png'
 import { useEffect, useState } from "react"
 
 function NormalScreen() {
@@ -44,7 +45,7 @@ function NormalScreen() {
                     </div>
                     <div>
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
                                 <path d="M1.99977 9L8.65859 16L21.9998 2" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
@@ -303,6 +304,15 @@ function NormalScreen() {
                             </PaymentMethods>
                             <h3>No thanks, I don’t want this.</h3>
                         </Payment>
+                        <Satisfation>
+                            <img src={satisfationstamp} alt="" />
+                            <p>
+                                If you are not completely thrilled with your Clarifion - We 
+                                have a <span>30 day satisfaction guarantee</span>. Please refer to our
+                                return policy at the bottom of the page for more details.
+                                Happy Shopping!
+                            </p>
+                        </Satisfation>
                     </LeftSide>
                 </ContainerInfo>
             </ContainerSpace>
@@ -370,6 +380,7 @@ const Logos = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    img{cursor: pointer;}
     div{
         :first-child{
             margin-right: 32px;
@@ -548,10 +559,11 @@ const LeftSide = styled.div`
     h1{
         color: #000;
         font-family: 'Manrope', sans-serif;
-        font-size: 32px;
+        font-size: 31px;
         font-weight: 400;
         max-width: 542px;
         margin-bottom: 32px;
+        line-height: 130%;
         span{
             color: #2C7EF8;
         }
@@ -576,7 +588,7 @@ const BlocProduct = styled.div`
     }
     p{
         color: #4D5254;
-
+        line-height: 140%;
         font-family: 'Manrope', sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -743,5 +755,29 @@ const PaymentMethods = styled.div`
         color:#CFCFCF;
         margin: 0;
         margin: 0 16px;
+    }
+`
+
+const Satisfation = styled.div`
+    display: flex;
+    max-width:538px ;
+    align-items: center;
+    margin-top: 32px;
+    img{
+        margin-right:16px;
+    }
+    p{
+        color: #4D5254;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Manrope', sans-serif;
+        line-height: 140%;
+    }
+    span{
+        color: #4D5254;
+        font-family: 'Manrope', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 140%;
     }
 `
