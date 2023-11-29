@@ -522,6 +522,15 @@ export default function HomePage() {
                                     </PaymentMethods>
                                     <h3>No thanks, I don’t want this.</h3>
                                 </Payment>
+                                <Satisfation>
+                                        <img src={satisfationstamp} alt="" />
+                                        <p>
+                                            If you are not completely thrilled with your Clarifion - We
+                                            have a <span>30 day satisfaction guarantee</span>. Please refer to our
+                                            return policy at the bottom of the page for more details.
+                                            Happy Shopping!
+                                        </p>
+                                    </Satisfation>
 
                             </UniqueSide>}
 
