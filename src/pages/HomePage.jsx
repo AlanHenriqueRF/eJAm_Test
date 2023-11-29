@@ -617,7 +617,7 @@ const PerfilName = styled.div`
 
 const UniqueSide = styled.div`
     max-width: 320px;
-    
+    /**/
     h1{
         color: #000;
         font-family: 'Manrope', sans-serif;
