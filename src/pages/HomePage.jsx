@@ -366,12 +366,33 @@ export default function HomePage() {
                                             </svg>
                                             <h2>12 left in Stock</h2>
                                         </ContainerStock>
-                                        
+
                                     </BlocProduct>
 
                                 </Product>
                                 <p>Simply plug a Clarifion into any standard outlet and replace
-                                     bulky, expensive air purifiers with a simple.</p>
+                                    bulky, expensive air purifiers with a simple.</p>
+
+                                <Information>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                                            <path d="M1.99976 11L8.65858 18L21.9998 4" stroke="#2C7EF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <h1>Negative Ion Technology may <span>help with allergens</span></h1>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                                            <path d="M1.99976 11L8.65858 18L21.9998 4" stroke="#2C7EF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <h1>Designed for <span>air rejuvenation</span></h1>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                                            <path d="M1.99976 11L8.65858 18L21.9998 4" stroke="#2C7EF8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                        <h1><span>Perfect for every</span> room in all types of places.</h1>
+                                    </div>
+                                </Information>
 
                             </UniqueSide>}
 
@@ -617,7 +638,6 @@ const PerfilName = styled.div`
 
 const UniqueSide = styled.div`
     max-width: 320px;
-    /**/
     h1{
         color: #000;
         font-family: 'Manrope', sans-serif;
@@ -636,6 +656,7 @@ const UniqueSide = styled.div`
         font-weight: 400;
         line-height: 140%;
         text-align: center;
+        margin-bottom: 24px;
     }
     
 `
@@ -770,6 +791,7 @@ const ContainerPrice = styled.div`
         }
     }
 `
+
 const ContainerStock = styled.div`
     display: flex;
     margin-bottom: 15px;
@@ -821,6 +843,22 @@ const Information = styled.div`
     }
     :last-child{
         margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 480px){
+        div{
+            svg{
+                width: 16px;
+                height: 16px;
+            }
+            h1{
+                font-size: 12px;
+            }
+            span{
+                font-size: 12px;
+            }
+        }
+        
     }
 `
 
