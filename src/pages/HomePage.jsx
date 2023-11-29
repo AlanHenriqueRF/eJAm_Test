@@ -523,14 +523,14 @@ export default function HomePage() {
                                     <h3>No thanks, I don’t want this.</h3>
                                 </Payment>
                                 <Satisfation>
-                                        <img src={satisfationstamp} alt="" />
-                                        <p>
-                                            If you are not completely thrilled with your Clarifion - We
-                                            have a <span>30 day satisfaction guarantee</span>. Please refer to our
-                                            return policy at the bottom of the page for more details.
-                                            Happy Shopping!
-                                        </p>
-                                    </Satisfation>
+                                    <img src={satisfationstamp} alt="" />
+                                    <p>
+                                        If you are not completely thrilled with your Clarifion - We
+                                        have a <span>30 day satisfaction guarantee</span>. Please refer to our
+                                        return policy at the bottom of the page for more details.
+                                        Happy Shopping!
+                                    </p>
+                                </Satisfation>
 
                             </UniqueSide>}
 
@@ -776,12 +776,13 @@ const PerfilName = styled.div`
 
 const UniqueSide = styled.div`
     max-width: 320px;
+    padding-bottom: 32px;
     h1{
         color: #000;
         font-family: 'Manrope', sans-serif;
         font-size: 24px;
         font-weight: 400;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
         line-height: 140%;
         text-align: center;
         span{
@@ -1172,4 +1173,22 @@ const Satisfation = styled.div`
         font-weight: 700;
         line-height: 140%;
     }
+
+    @media screen and (max-width: 480px){
+        align-items: flex-start;
+        margin-top: 24px;
+        img{
+            width: 48px;
+            height: 48px;
+        }
+        p{
+            font-size: 12px;
+            text-align: justify;
+        }   
+        span{
+            font-size: 12px;
+            text-align: justify;
+        }
+        }
+
 `
